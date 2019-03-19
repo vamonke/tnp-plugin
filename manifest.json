@@ -1,18 +1,22 @@
 {
- "manifest_version": 2,
- "name": "TNP Playlist",
- "description": "Description goes here",
- "version": "1",
- "author": "Varick Lim",
- "browser_action": {
-   "default_icon": "tab-icon.png",
-   "default_title": "Have a good day",
-   "default_popup": "popup.html"
- },
-"chrome_url_overrides" : {
-  "newtab": "newtab.html"
-},
- "permissions": [
-   "activeTab"
+  "manifest_version": 2,
+  "name": "TNP Playlist",
+  "description": "Description goes here",
+  "version": "1",
+  "author": "Varick Lim",
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "Have a good day",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "background": {
+    "scripts": ["jquery.min.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.min.js"]
+    }
   ]
 }

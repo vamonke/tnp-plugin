@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>New tab</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <style>
       body {
         min-width: 300px;
@@ -23,15 +24,32 @@
         margin: 30vh 0;
       }
       .mood:hover {
-        background-color: #DDDDDD;
+        background-color: #dddddd;
+      }
+      .playlist1 {
+        display: none;
       }
     </style>
   </head>
   <body>
-    <h2>TNP Playlist</h2>
-    <div class="hello">Good evening, Calvin</div>
-    <div class="mood">Playlist 1</div>
-    <div class="mood">Playlist 2</div>
-    <div class="mood">Playlist 3</div>
+    <h1>TNP Popup</h1>
+    <div id="home">
+      <div class="mood" id="select">Playlist 1</div>
+      <div class="mood">Playlist 2</div>
+      <div class="mood">Playlist 3</div>
+    </div>
+    <div class="playlist1">
+      <div class="mood">
+        <a
+          target="_blank"
+          href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera"
+          >Virgin Active members slam fitness club for 'rude' response over use
+          of CCTV camera</a
+        >
+      </div>
+      <div class="mood">Playlist 2</div>
+      <div class="mood">Playlist 3</div>
+    </div>
+    <script src="newtab.js"></script>
   </body>
 </html>

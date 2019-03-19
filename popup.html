@@ -2,9 +2,11 @@
 <html>
   <head>
     <title>TNP Playlist</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <style>
       body {
-        min-width: 300px;
+        min-width: 500px;
+        min-height: 700px;
         padding: 10px;
         text-align: center;
       }
@@ -18,12 +20,39 @@
       .mood:hover {
         background-color: #DDDDDD;
       }
+      .playlist {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <h1>TNP Popup</h1>
-    <div class="mood">Playlist 1</div>
-    <div class="mood">Playlist 2</div>
-    <div class="mood">Playlist 3</div>
-  </body>
-</html>
+      <h1>TNP Popup</h1>
+      <div id="home">
+        <div class="mood" id="select1">Playlist 1</div>
+        <div class="mood">Playlist 2</div>
+        <div class="mood">Playlist 3</div>
+      </div>
+      <div class="playlist" id="playlist1">
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+      </div>
+      <script src="newtab.js"></script>
+    </body>
+  </html>
+  

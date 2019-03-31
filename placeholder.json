@@ -1,0 +1,49 @@
+{
+  "stories": [
+    {
+      "fb_shares": 27,
+      "standfirst": "She is sentenced to 26 months' jail for stealing over $34k worth of items",
+      "fb_comments": 11,
+      "img_src": "https://www.tnp.sg/sites/default/files/styles/rl380/public/articles/2019/03/26/NP_20190326_SQPARTI27_4719830.jpg?itok=dBHlkV0N",
+      "published_date": "26 March 2019",
+      "breaking": true,
+      "tag": "COURT & CRIME",
+      "url": "https://www.tnp.sg/news/singapore/maid-who-stole-cag-chairmans-home-gets-over-2-years-jail",
+      "headline": "Maid who stole from CAG chairman\u2019s home gets over 2 years\u2019 jail",
+      "fb_engagements": 79,
+      "category": "Singapore",
+      "lead": "A maid who stole more than $34,000 worth of items while working for Changi Airport Group chairman Liew Mun Leong and his family was yesterday sentenced to two years and two months' jail.",
+      "fb_reactions": 41
+    },
+    {
+      "fb_shares": 240,
+      "fb_comments": 145,
+      "img_src": "https://www.tnp.sg/sites/default/files/styles/rl380/public/articles/2019/03/26/NP_20190326_DSSCOOT26_4719789.jpg?itok=jUg6fQ_j",
+      "published_date": "26 March 2019",
+      "standfirst": "Some thought they were going to die as plane descended rapidly and oxygen masks were deployed before landing safely",
+      "tag": "COMMUNITY ISSUES",
+      "url": "https://www.tnp.sg/news/singapore/scoot-apologises-oxygen-mask-incident-taipei-flight-pilots-be-retrained",
+      "headline": "Scoot apologises for oxygen mask incident on Taipei flight, pilots to be retrained",
+      "fb_reactions": 241,
+      "breaking": true,
+      "category": "Singapore",
+      "lead": "When oxygen masks were deployed on a Scoot flight as it was preparing to land, the passengers were puzzled.",
+      "fb_engagements": 626
+    },
+    {
+      "fb_shares": 51,
+      "fb_comments": 216,
+      "img_src": "https://www.tnp.sg/sites/default/files/styles/rl380/public/articles/2019/03/26/shan333.jpg?itok=gNpE69FX",
+      "published_date": "26 March 2019",
+      "standfirst": "",
+      "tag": "COMMUNITY ISSUES",
+      "url": "https://www.tnp.sg/news/singapore/police-probe-after-facebook-comments-throwing-egg-minister-shanmugam",
+      "headline": "Police probe Facebook comments on throwing egg at Minister Shanmugam",
+      "fb_reactions": 198,
+      "breaking": true,
+      "category": "Singapore",
+      "lead": "The police are investigating the comments made by two men on throwing an egg at Law and Home Affairs Minister K. Shanmugam.",
+      "fb_engagements": 465
+    }
+  ]
+}

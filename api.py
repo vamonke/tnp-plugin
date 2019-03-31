@@ -2,8 +2,10 @@ import flask
 from flask import request, jsonify
 import pymongo
 from bson.json_util import dumps
+from flask_cors import CORS
 
 app = flask.Flask(__name__)
+CORS(app)
 app.config["DEBUG"] = True
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -45,7 +47,9 @@ def api_breaking():
     for x in table.find(query, {'_id': False }).limit(3):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    return dumps(result)
+    response = flask.jsonify({ 'stories': result })
+    return response
+    # return dumps({'stories': result})
 
 
 @app.route('/api/trending', methods=['GET'])

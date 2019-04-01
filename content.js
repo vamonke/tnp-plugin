@@ -1,1 +1,1 @@
-chrome.runtime.sendMessage({ action: 'updateIcon' });
+// chrome.runtime.sendMessage({ action: 'updateIcon' });

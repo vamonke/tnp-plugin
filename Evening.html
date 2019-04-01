@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evening Edition</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <style>
+      body {
+/*        min-width: 500px;
+        min-height: 700px;*/
+        padding: 5px;
+        text-align: center;
+      }
+
+      div {
+        box-sizing: border-box;
+      }
+
+      #welcome{
+        font-family: "Bodoni MT";
+      }
+
+      .container{
+        padding-right:2px;
+        padding-left:2px;
+        clear:both;
+        margin-right:auto;
+        margin-left:auto
+      }
+
+      .pull-left{float:left!important}
+      .pull-right{float:right!important}
+
+
+      .featured img{
+        width: 100%;
+        height: 187px;
+        font-size: 2em;
+        margin-top: 10px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+      }
+
+      .mainmood img{
+        width: 240px;
+        height: 196px;
+        font-size: 2em;
+        margin-top: 10px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+      }
+      .mood img{
+        width: 119px;
+        height: 93px;
+        font-size: 2em;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+      }
+
+      .standard img{
+        width: 119px;
+        height: 93px;
+        font-size: 2em;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+      }
+
+      .playlist {
+        display: none;
+      }
+      .header-logo {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .edition {
+        width: 60px;
+        height: 50px;
+        background: #000000;
+        margin-top: 10px;
+        font-weight: 500;
+        border-radius: 5px;
+      }
+
+      .nextedi {
+        width: 143px;
+        height: 20px;
+        background: #000000;
+        font-weight: bold;
+        line-height: normal;
+        border-radius: 5px;
+      }
+
+      #wrap {
+        margin:0 auto;
+        width: 300px;
+        height: 440px;
+        border: 1px solid black;
+        overflow-y: auto;
+      }
+
+    .article {
+    height: 187px;
+    width: 262px ;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.14) 0%, #000000 100%), src="./img/article.png";
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+  .category{
+    text-transform: capitalize;
+    color: white;
+    background-color: #FD881C;
+    width: 58px;
+    height: 20px;
+    top: 0;
+    position: relative;
+    float: right;
+    margin-top: -191px;
+  }
+
+  .category p{
+    font-size: 11px;
+    text-align: center;
+    margin-bottom:  0;
+    margin-top: 2px;
+  }
+
+  .news-title {
+        width: 177px;
+        height: 85px;
+        font-weight: bold;
+        line-height: normal;
+        margin-top: -70px;
+  }
+
+  .news-title h2{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .news-title p{
+    font-size: 14px;
+    color: white;
+    float: right;
+    margin-bottom: 0px;
+  }
+
+  hr{
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 0.2px solid #FFFFFF;
+  }
+
+  .btn {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 8px;
+    border: .5px solid #fff;
+    border-radius: 10px;
+    float: left;
+    background-color: transparent;
+    padding: 4px 18px;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- HEADER -->
+      <div class="container">
+        <div class="pull-left" id="welcome">
+          <div style="font-size:45px;">GOOD <img src="./img/logo.png" width="40" height="40" alt="" align="middle"></div>
+          <div style="font-size:45px;">EVENING</div>
+        </div>
+
+      <div class="pull-right">
+        <div class="edition">
+          <div style="color:orange; font-family:Roboto; font-size: 10px;">Edition</div>
+          <div style="color:white; font-family:Roboto; font-size: 10px;">19 Mar |</div>
+          <div style="color:white; font-family:Roboto; font-size: 10px;">TUES</div>
+        </div>
+      </div>
+    </div>
+      <!-- HEADER -->
+
+      <!-- Main Articles -->
+    <div class="container">
+      <div class="nextedi">
+        <div style="color:white; font-family:Roboto; font-size: 10px;">Next edition coming at 9am</div>
+      </div>
+        <hr style="height:2px;border-top:5px solid #000000;border-bottom:2px solid #000000; margin-top: -13px;" />
+        <div style="font-family: Helvetica; font-size: 12px; font-weight: bold;" align="left">FEATURED</div>
+
+<div class="featured">
+      <a class="images" href="#">
+          <img src="./img/article.png" alt="">
+      </a> 
+  <div class="category">
+    <p>Top news</p>
+  </div>
+  <div class="news-title">
+    <div style="color:white; font-family:Roboto; font-size: 18px;">At least 49 dead in terrorist attacks on two New Zealand mosques</div>
+
+    <hr>
+    <button type="button" class="btn">READ</button>
+    <p><small>15 March 2019  |  WORLD</small></p>
+    <div style="clear: both"></div>
+  </div>
+</div>
+    </div>
+      <!-- Main Articles -->
+
+
+
+      <!-- Changing Articles -->
+      <div class="container">
+        <div style="font-family:Helvetica; font-size: 12px; margin-top: 10px; font-weight: bold;" align="left">DISCOVERER</div>
+        <div style="font-family:Roboto; font-size: 10px;" align="left">Had a busy day? Chill out and catch up with some evening reads</div>
+        <div class="mainmood">
+            <a class="images" href="#">
+              <img src="./img/Today rewind.png" alt="">
+            </a>
+          </div>
+
+        <div style="float: left;" class="mood">
+            <a class="images" href="#">
+              <img src="./img/Dinner spots.png" alt="">
+            </a>
+        </div>
+        <div style="float: right;" class="mood">
+            <a class="images" href="#">
+              <img src="./img/Cook it Tonight.png" alt="">
+            </a>
+        </div>
+      </div>
+      <!-- Changing Articles -->
+
+
+      <!-- Extra Tabs -->
+        <div style="float: left;" class="standard">
+            <a class="images" href="#">
+              <img src="./img/Visit.png" alt="">
+            </a>
+        </div>
+        <div style="float: right;" class="standard">
+            <a class="images" href="#">
+              <img src="./img/Read.png" alt="">
+            </a>
+        </div>
+      <!-- Extra Tabs -->
+      </div>
+
+
+      <div class="playlist" id="playlist1">
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+          <div class="mood">
+            <a target="_blank" href="https://www.tnp.sg/news/singapore/virgin-active-members-slam-fitness-club-response-use-cctv-camera">
+              Virgin Active members slam fitness club for 'rude' response over use
+              of CCTV camera</a
+            >
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+      <script src="popup.js"></script>
+    </body>
+  </html>

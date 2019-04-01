@@ -6,26 +6,35 @@ let currentMonth = today.getMonth()
 let currentDate = today.getDate();
 let currentDay = today.getDay();
 
-$(function() {
+// $(function() {
   console.log("home.js");
   
   let greeting;  
   if (currentHour < 12) {
     greeting = 'Morning';
+    nextEdi = '12pm';
   } else if (currentHour < 18) {
     greeting = 'Afternoon';
+    nextEdi = '6pm';
   } else {
     greeting = 'Evening'
+    nextEdi = '9am';
   }
 
   $('#greeting').text(greeting);
   $('#date').text(currentDay + ' ' + monthNames[currentMonth]);
   $('#day').text(dayNames[currentDay]);
+  $('#next-edi-timing').text(nextEdi);
 
+  $('.mood-picker').hide();
+  $('#' + greeting).show();
+
+  var n_featured = 3;
   // GET featured
-  function loadFeatured(json) {
-    console.log(json);
-    json.stories.forEach(story => {
+  function loadFeatured(stories) {
+    console.log(stories);
+    n_featured = stories.length;
+    stories.forEach(story => {
       const html = `
         <div class="featured" style="background-image: url(${story.img_src})">
           <div class="overlay">
@@ -61,13 +70,13 @@ $(function() {
       $("#right-arrow, #left-arrow").removeClass("disabled");
       if (showing == 0) {
         $("#left-arrow").addClass("disabled");
-      } else if (showing == 2) {
+      } else if (showing == n_featured) {
         $("#right-arrow").addClass("disabled");
       }
     }
 
     $("#right-arrow").click(function() {
-      if (showing < 2) showing += 1;
+      if (showing < n_featured) showing += 1;
       toggleTiles();
     });
 
@@ -91,4 +100,16 @@ $(function() {
       console.log(errorThrown);
     }
   });
-});
+
+  $('.mood').click(function() {
+    // console.log(this);
+    var mood = $(this).attr('id');
+    window.location.href= "stories.html?mood=" + mood;
+  })
+  
+  $('#close-icon').click(function() {
+    console.log('close');
+    window.close();
+  })
+
+// });

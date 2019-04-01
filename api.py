@@ -44,49 +44,48 @@ def home():
 def api_breaking():
     result = []
     query = { 'breaking': True }
-    for x in table.find(query, {'_id': False }).limit(3):
+    for x in table.find(query, {'_id': False }).limit(6):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    response = flask.jsonify({ 'stories': result })
-    return response
+    return flask.jsonify(result)
     # return dumps({'stories': result})
 
 
 @app.route('/api/trending', methods=['GET'])
 def api_trending():
     result = []
-    for x in table.find({}, {'_id': False }).limit(3).sort('fb_engagements', pymongo.DESCENDING):
+    for x in table.find({}, {'_id': False }).limit(6).sort('fb_engagements', pymongo.DESCENDING):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    return dumps(result)
+    return flask.jsonify(result)
 
 
 @app.route('/api/catchup', methods=['GET'])
 def api_catchup():
     result = []
-    for x in table.find({}, {'_id': False }).limit(3):
+    for x in table.find({}, {'_id': False }).limit(6):
         result.append(x)
-    return dumps(result)
+    return flask.jsonify(result)
 
 
 @app.route('/api/lunchmunch', methods=['GET'])
 def api_lunchmunch():
     result = []
     query = { 'tag': 'FOOD & DRINK' }
-    for x in table.find(query, {'_id': False }).limit(3).sort('published_date', pymongo.DESCENDING):
+    for x in table.find(query, {'_id': False }).limit(6).sort('published_date', pymongo.DESCENDING):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    return dumps(result)
+    return flask.jsonify(result)
 
 
 @app.route('/api/sgfocus', methods=['GET'])
 def api_sgfocus():
     result = []
     query = { 'category': 'Singapore' }
-    for x in table.find(query, {'_id': False }).limit(3).sort('published_date', pymongo.DESCENDING):
+    for x in table.find(query, {'_id': False }).limit(6).sort('published_date', pymongo.DESCENDING):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    return dumps(result)
+    return flask.jsonify(result)
 
 
 @app.route('/api/entertainment', methods=['GET'])
@@ -101,10 +100,10 @@ def api_entertainment():
             { "category": "School of Frock" }
         ]
     }
-    for x in table.find(query, {'_id': False }).limit(3):
+    for x in table.find(query, {'_id': False }).limit(6):
         x['published_date'] = x['published_date'].strftime("%d %B %Y")
         result.append(x)
-    return dumps(result)
+    return flask.jsonify(result)
 
 # @app.route('/api/v1/resources/books', methods=['GET'])
 # def api_id():

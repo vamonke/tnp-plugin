@@ -1,23 +1,8 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  overflow: auto;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-}
-
 .header {
-  /* width: auto;
-  right: 0;
-  left: 0; */
   width: 100%;
   box-sizing: border-box;
   top: 0;
-  padding: 20px 20px 0;
+  padding: 15px 20px 0;
   position: fixed;
   background-color: white;
   z-index: 100;
@@ -39,7 +24,7 @@ body {
 .header .edition {
   color: white;
   font-size: 10px;
-  width: 70px;
+  width: 90px;
   padding: 8px;
   position: absolute;
   right: -20px;
@@ -68,8 +53,9 @@ body {
   margin: 16px 0 0;
 }
 
-.header-padding {
-  padding: 160px 20px 20px;
+.content {
+  padding: 150px 20px 20px;
+  overflow: auto;
 }
 
 .featured {
@@ -135,21 +121,13 @@ body {
   position: absolute;
   box-sizing: border-box;
   bottom: 0;
-  border-top: 0.5px solid rgb(255, 255, 255)
+  border-top: 0.5px solid rgb(255, 255, 255);
 }
 
 .featured .read {
   float: left;
-  font-size: 11px;
-  padding: 0 15px;
-  line-height: 20px;
-  border-radius: 5px;
-  border: 0.5px solid white;
-}
-
-.featured a.read {
   color: white;
-  text-decoration: none;
+  border-color: white;
 }
 
 .date {
@@ -157,14 +135,6 @@ body {
   font-size: 10px;
   position: relative;
   top: 5px;
-}
-
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
 }
 
 #left-arrow, #right-arrow {
@@ -183,12 +153,32 @@ body {
 
 .featured-header {
   font-weight: bold;
-  font-size: 13px;
-  margin-bottom: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
-
-
 
 .divider {
   padding: 0 3px;
 }
+
+/* Moods */
+
+.mood {
+  width: calc(50% - 10px);
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.main.mood {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.mood img {
+  width: 100%;
+  display: block;
+}
+

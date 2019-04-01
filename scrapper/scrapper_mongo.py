@@ -44,7 +44,9 @@ def scrap_article(url):
   img = soup.select('.group-media-frame > img')
   img_src = ''
   if img and img[0]:
-    img_src = 'https://www.tnp.sg' + img[0]['src']
+    img_src = img[0]['src']
+    if img_src[0] == '/':
+      img_src = 'https://www.tnp.sg' + img_src
 
   # Engagements: Shares, Comments, Reactions
   engagements_tag = soup.find('li', attrs={'class': 'share-count'})
@@ -80,31 +82,43 @@ def scrap_article(url):
 
 start_time = time.time()
 
-tnp = 'https://www.tnp.sg'
-hedchef = 'https://www.tnp.sg/lifestyle/hed-chef'
-singapore = 'https://www.tnp.sg/news/singapore'
-fooddrink = 'https://www.tnp.sg/tag/food-drink'
-entertainment = 'https://www.tnp.sg/entertainment'
+urls = [
+  'https://www.tnp.sg', # tnp
+  'https://www.tnp.sg/lifestyle/hed-chef', # hedchef
+  'https://www.tnp.sg/news/singapore', # singapore
+  'https://www.tnp.sg/tag/food-drink', # fooddrink
+  'https://www.tnp.sg/entertainment' # entertainment
+]
 
-homepage = urlopen(entertainment)
+for url in urls:
+  homepage = urlopen(url)
 
-soup = BeautifulSoup(homepage, 'html.parser')
-links = soup.select('.card-title > a')
+  soup = BeautifulSoup(homepage, 'html.parser')
+  links = soup.select('.card-title > a')
 
-for index, link in enumerate(links):
-  print(link['href'])
-  # story = scrap_article(link['href'])
-  story = scrap_article(link['href'])
-  if index < 5:
-    story['breaking'] = True
-  # insert to mongo db
-  # print(story)
-  table.insert_one(story)
-  # table.update_one({ 'title': story.title }, story True)
+  for index, link in enumerate(links):
+    print(link['href'])
+    # story = scrap_article(link['href'])
+    try:
+      story = scrap_article(link['href'])
+      if url == 'https://www.tnp.sg' and index < 5:
+        story['breaking'] = True
+      # insert to mongo db
+      # print(story)
+      # table.insert_one(story)
+      table.update_one({ 'headline': story['headline'] }, { '$set': story }, True)
+    except:
+      print('failed')
+    # break
 
-# idk = scrap_article('https://www.tnp.sg/news/singapore/taxi-passenger-who-alighted-ecp-cabby-appeared-dazed')
-# print(idk)
-# table.insert_one(idk)
+# urls = [
+#   "https://www.tnp.sg/news/singapore/ex-gm-town-council-contractor-plead-guilty-bribery",
+# ]
+
+# for url in urls:
+#   story = scrap_article(url)
+#   print(story['img_src'])
+#   table.update_one({ 'headline': story['headline'] }, { '$set': story }, True)
 
 elapsed_time = time.time() - start_time
 print('\r\nElapsed time: ' + str(round(elapsed_time, 2)) + 's')

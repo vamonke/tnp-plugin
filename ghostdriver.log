@@ -1,0 +1,94 @@
+[INFO  - 2019-04-01T15:51:24.891Z] GhostDriver - Main - running on port 52225
+[INFO  - 2019-04-01T15:51:29.211Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-04-01T15:51:29.212Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.customHeaders:  - {}
+[INFO  - 2019-04-01T15:51:29.212Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-04-01T15:51:29.212Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 037fb740-5496-11e9-bf80-110aadc28c82
+[ERROR - 2019-04-01T15:51:33.495Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'this.stristr(this.agent, 'version').split('/')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:33.496Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  checkBrowser (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:61)
+  init (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:7)
+  (anonymous function) (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:250)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:33.899Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: TypeError: null is not an object (evaluating 'document.getElementById('dfp-ad-topoverlay_ad_container').style')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:33.900Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  global code (https://www.tnp.sg/news/singapore/ex-gm-town-council-contractor-plead-guilty-bribery:2)
+  write (:0)
+  mv (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  iw (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  v (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  eg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  cg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  dg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  sj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  then (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  D (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  D (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  v (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  eg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  cg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  dg (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  sj (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  then (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  (anonymous function) (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+  value (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:39.747Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'this.stristr(this.agent, 'version').split('/')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:39.747Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  checkBrowser (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:61)
+  init (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:7)
+  (anonymous function) (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:250)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:41.824Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: ReferenceError: Can't find variable: setData
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:41.825Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  onload (https://www.mistyle.life/vsnBnr/styleCrushBanner.lv?campaignNo=30&visionType=A00001&zoneWidth=700&zoneHeight=250&pubNo=3&hostUrl=https://www.tnp.sg/entertainment/school-frock/school-frock-eva-green-shines-again-best-dressed&imgUrl=https%3A%2F%2Fwww.tnp.sg%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Frl680%2Fpublic%2Farticles%2F2019%2F03%2F26%2FNP_20190326_JMFASH26VLG7_4718765.jpg%3Fitok%3DGzPz1p8V:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:44.242Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'this.stristr(this.agent, 'version').split('/')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:44.242Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  checkBrowser (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:61)
+  init (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:7)
+  (anonymous function) (https://www.tnp.sg/sites/default/files/advagg_js/js__hyQ4SVFAhk09nhgE-rJEIilbhRaPtyQMAXTpZSeQu7Y__wq2puKp_zS05m5teFy9G9tpMlgWPjbKx07iiR3AcZSw__dd3S9GTwy0OpssQ1-F6lsXCXAJlSzYV6yiUY9wVVTeE.js:250)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:46.053Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: ReferenceError: Can't find variable: setData
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:46.053Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  onload (https://www.mistyle.life/vsnBnr/styleCrushBanner.lv?campaignNo=40&visionType=A00001&zoneWidth=700&zoneHeight=250&pubNo=3&hostUrl=https://www.tnp.sg/entertainment/tv/game-thrones-jaime-lannister-people-thought-show-was-going-be-so-bad&imgUrl=https%3A%2F%2Fwww.tnp.sg%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Frl680%2Fpublic%2Farticles%2F2019%2F03%2F25%2FNP_20190325_YFNIK25_4715000.jpg%3Fitok%3DVT-FeiN8:51)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:47.049Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '$('.group-aside')')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-04-01T15:51:47.050Z] Session [037fb740-5496-11e9-bf80-110aadc28c82] - page.onError - stack:
+  sl (https://securepubads.g.doubleclick.net/gpt/pubads_impl_2019032901.js:1)
+
+  phantomjs://platform/console++.js:263 in error
